@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="-20dp"
+        android:id="@+id/content_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff"
+        android:layout_alignParentBottom="true">
+
+        <RadioGroup
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_bo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/my_choose"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="正在播放"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/list_choose"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="歌单列表"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>
